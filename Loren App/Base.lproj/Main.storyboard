@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="znx-cv-e7X">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,188 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loren_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firework" translatesAutoresizingMaskIntoConstraints="NO" id="A19-wH-z6o">
+                                <rect key="frame" x="29" y="144" width="316" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorén" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-7B-Zh8">
+                                <rect key="frame" x="153" y="414" width="68" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.32304885786802029" green="0.0" blue="0.009070589079409247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lp-lL-miW">
+                                <rect key="frame" x="129" y="473" width="117" height="33"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <state key="normal" title="Favorite Subject">
+                                    <color key="titleColor" red="0.32304885789999999" green="0.0" blue="0.0090705890789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xLe-r5-DNp" kind="show" id="4tz-lP-6tX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-pY-M1S">
+                                <rect key="frame" x="136" y="523" width="103" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pu8-Ca-8Zu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <state key="normal" title="Favorite Sport">
+                                    <color key="titleColor" red="0.32304885789999999" green="0.0" blue="0.0090705890789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qCj-II-mWs" kind="show" id="Rfc-EB-7Z6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpJ-OL-D7n">
+                                <rect key="frame" x="134" y="572" width="107" height="33"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <state key="normal" title="Favorite Music">
+                                    <color key="titleColor" red="0.32304885789999999" green="0.0" blue="0.0090705890789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vGv-DB-ZJB" kind="show" id="T2u-0X-EA4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97913399418779767" blue="0.87873951069107481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KgC-pY-M1S" firstAttribute="top" secondItem="0lp-lL-miW" secondAttribute="bottom" constant="17" id="6lf-l2-1F4"/>
+                            <constraint firstItem="obQ-7B-Zh8" firstAttribute="centerX" secondItem="0lp-lL-miW" secondAttribute="centerX" id="ANN-k4-s43"/>
+                            <constraint firstItem="A19-wH-z6o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9I-Bg-IQH"/>
+                            <constraint firstItem="SpJ-OL-D7n" firstAttribute="top" secondItem="KgC-pY-M1S" secondAttribute="bottom" constant="19" id="Of9-1I-V2x"/>
+                            <constraint firstItem="0lp-lL-miW" firstAttribute="top" secondItem="obQ-7B-Zh8" secondAttribute="bottom" constant="31" id="UMP-rA-8ED"/>
+                            <constraint firstItem="A19-wH-z6o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="XHn-KI-3J0"/>
+                            <constraint firstItem="KgC-pY-M1S" firstAttribute="centerX" secondItem="SpJ-OL-D7n" secondAttribute="centerX" id="bF2-MS-HEV"/>
+                            <constraint firstItem="obQ-7B-Zh8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="fom-cL-3NS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SpJ-OL-D7n" secondAttribute="bottom" constant="173" id="rzs-b5-4xS"/>
+                            <constraint firstItem="A19-wH-z6o" firstAttribute="centerX" secondItem="obQ-7B-Zh8" secondAttribute="centerX" id="uZl-Da-N7S"/>
+                            <constraint firstItem="0lp-lL-miW" firstAttribute="top" secondItem="A19-wH-z6o" secondAttribute="bottom" constant="52" id="vGi-6e-Xai"/>
+                            <constraint firstItem="A19-wH-z6o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="zCs-UV-hdj"/>
+                            <constraint firstItem="0lp-lL-miW" firstAttribute="centerX" secondItem="KgC-pY-M1S" secondAttribute="centerX" id="zHJ-fi-MAa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3cI-2y-4vD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1060" y="117.48768472906404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2KX-Pm-Nm3">
+            <objects>
+                <viewController id="xLe-r5-DNp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ChX-2e-GsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-bc-t1N">
+                                <rect key="frame" x="67" y="361" width="240" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <color key="textColor" red="0.29467401649746194" green="0.10007432533469904" blue="0.0054267078010205713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glass ball" translatesAutoresizingMaskIntoConstraints="NO" id="rNT-1c-KbM">
+                                <rect key="frame" x="56" y="158" width="263" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.86790223608524519" blue="0.8090303867920029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pH4-OB-Fwr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWe-mt-5Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="116.74876847290641"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ka9-MN-zb5">
+            <objects>
+                <viewController id="qCj-II-mWs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4d-bl-zxN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ukQ-HZ-n0D">
+                                <rect key="frame" x="67" y="360" width="240" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </string>
+                                <color key="textColor" red="0.0029191383882317982" green="0.24866181089419917" blue="0.30480647208121825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crystallized" translatesAutoresizingMaskIntoConstraints="NO" id="Obv-4L-7Lb">
+                                <rect key="frame" x="56" y="157" width="263" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78556467757722237" green="0.93587277342476494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cJL-NR-hXI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1V-k3-AEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.1999999999998" y="116.74876847290641"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wPm-zy-bJq">
+            <objects>
+                <viewController id="vGv-DB-ZJB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xvk-mi-4MA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uQL-S3-cpv">
+                                <rect key="frame" x="67" y="362" width="240" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </string>
+                                <color key="textColor" red="0.00655296099803882" green="0.29011342005076146" blue="0.075605041995304892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="misty treetops" translatesAutoresizingMaskIntoConstraints="NO" id="T19-ES-eBj">
+                                <rect key="frame" x="56" y="154" width="263" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76143431138967599" green="1" blue="0.85016884802469495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="D9P-QP-St4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXW-dh-t15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3106.4000000000001" y="116.74876847290641"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FrL-fo-2ec">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="znx-cv-e7X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XUO-dZ-Mz5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="y64-aJ-dxI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGD-rD-tLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.48768472906404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crystallized" width="1993" height="1328"/>
+        <image name="firework" width="2548" height="1699"/>
+        <image name="glass ball" width="2066" height="1377"/>
+        <image name="misty treetops" width="3000" height="2000"/>
+    </resources>
 </document>
